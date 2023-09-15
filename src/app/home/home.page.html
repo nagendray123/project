@@ -1,20 +1,79 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Welcome
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <h1>Buttons</h1>
+  <ion-row>
+   <ion-col size-md="6" size="12">
+      <ion-button expand = "true" [routerLink]="['/contact']">
+        <ion-icon name="star" slot="end"></ion-icon>
+        Contact
+      </ion-button>
+    </ion-col>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-col size-md="6" size="12">
+      <ion-button expand = "true" [routerLink]="['/about']">
+        <ion-icon name="star" slot="start"></ion-icon>
+        About
+      </ion-button>  
+    </ion-col>
+  </ion-row>  
+
+  <h1>Badge</h1>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Followes</ion-label>
+      <ion-badge color="primary">1k</ion-badge> 
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Like</ion-label>
+      <ion-badge color="secondary">2k</ion-badge> 
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Notification</ion-label>
+      <ion-badge color="danger">3000</ion-badge> 
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Comment</ion-label>
+      <ion-badge color="success">2k</ion-badge> 
+    </ion-item>
+  </ion-list>
+
+  <h1>Grid</h1>
+  <ion-grid>
+    <ion-row>
+      <ion-col>1</ion-col>
+      <ion-col>2</ion-col>
+      <ion-col>3</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>1</ion-col>
+      <ion-col>2</ion-col>
+      <ion-col>3</ion-col>
+      <ion-col>4</ion-col>
+      <ion-col>5</ion-col>
+      <ion-col>6</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h1>Icon</h1>
+
+  <ion-icon name="stats-chart-outline"></ion-icon>
+  <ion-icon name="qr-code-outline"></ion-icon>
+  <ion-icon name="wifi-outline"></ion-icon>
+  <ion-icon name="logo-linkedin"></ion-icon>
+
 </ion-content>
